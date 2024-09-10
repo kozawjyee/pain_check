@@ -1,0 +1,69 @@
+#finger {
+    /* opacity: 0; */
+    animation: fingerAnimation 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.label-line{
+    position: absolute;
+    right: 0;
+}
+
+#dip>rect{
+    cursor: pointer;
+    transition: fill 0.5s linear;
+    animation: dipAnimation 1s linear;
+    stroke-dasharray: 100;
+    /* stroke-dashoffset: 100; */
+    position: relative;
+    user-select: none;
+}
+
+#pip>rect{
+    cursor: pointer;
+    transition: fill 0.5s linear;
+    animation: dipAnimation 1s linear;
+    /* animation-delay: 1s; */
+    /* opacity: 0; */
+    stroke-dasharray: 100;
+    user-select: none;
+}
+
+#mcp>rect{
+    cursor: pointer;
+    transition: fill 0.5s linear;
+    animation: dipAnimation 1s linear;
+    /* animation-delay: 2s; */
+    /* opacity: 0; */
+    stroke-dasharray: 100;
+    user-select: none;
+}
+
+
+@keyframes dipAnimation {
+    /* 0%, 90% {
+        opacity: 0;
+      }
+
+    100% {
+        opacity: 1;
+    } */
+     from{
+        stroke-dashoffset: 100;
+     }
+     to{
+        stroke-dashoffset: 0;
+        /* stroke-dasharray: 0; */
+     }
+}
+
+@keyframes fingerAnimation {
+    0%{
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}

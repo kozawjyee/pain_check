@@ -1,0 +1,53 @@
+#abs-main {
+    /* opacity: 0; */
+    animation: absAnimation 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.label-line{
+    position: absolute;
+    right: 0;
+}
+
+#Vector,#Vector_2{
+    z-index: -10;
+}
+
+#abs>path{
+    transition: fill 0.5s linear;
+}
+
+#abs>circle{
+    transition: fill 0.5s linear;
+}
+
+#abs:nth-child(n){
+    cursor: pointer;
+    animation: highlightAnimation 1.5s linear;
+    stroke-dasharray: 500;
+    /* stroke-dashoffset: 100; */
+    position: relative;
+    user-select: none;
+    display: block;
+}
+
+
+@keyframes highlightAnimation {
+     from{
+        stroke-dashoffset: 500;
+     }
+     to{
+        stroke-dashoffset: 0;
+     }
+}
+
+@keyframes absAnimation {
+    0%{
+        scale: 0.5;
+        opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}

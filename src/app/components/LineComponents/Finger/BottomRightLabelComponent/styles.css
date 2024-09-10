@@ -1,0 +1,10 @@
+.message-box{
+    /* max-width: 150px;
+    min-width: 100px; */
+    border-radius: 20px;
+    padding: 12px 12px;
+    background-color: var(--background-light);
+    font-size: 14px;
+    text-align: center;
+    /* box-shadow: inset 1px 1px 5px 0px var(--background-dark); */
+}

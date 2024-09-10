@@ -1,0 +1,16 @@
+.select-box{
+    padding: 12px;
+    border-radius: 6px;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+}
+
+.select-box>option {
+    outline: none;
+    font-weight: 500;
+}
+
+.select-box::selection{
+    background-color: var(--primary-color);
+}
